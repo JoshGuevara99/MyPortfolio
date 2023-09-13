@@ -46,8 +46,72 @@
     }
 }
 
+
+
 .svg-container{
     stroke:#d613c3;
 
     stroke-width: 10;
 }
+
+
+@media screen and (max-width: 972px) {
+    /* CSS rules for screens less than or equal to 600px wide */
+    .logo-container{
+        z-index: 0;
+        width: 400px;
+        height:600px;
+    
+        position:absolute;
+        top:0;
+        right:15%;
+        bottom:0;
+        left:20%;
+        margin:auto;
+    
+        // svg{
+        //     width:100%;
+        //     height:auto;
+        //     bottom:0;
+        //     transform: rotateZ(30deg) !important;
+            
+    
+        // }
+        
+        .solid-logo{
+            position:absolute;
+            top:auto;
+            right:auto;
+            right:auto;
+            bottom:auto;
+            left:0;
+            margin:auto;
+    
+            width:80%;
+            opacity: 0;
+            transform: rotateZ(20deg) !important;
+            z-index: 1;
+    
+    
+    
+        }
+        
+        svg{
+            width:80%;
+            height:auto;
+            bottom:0;
+            transform: rotateZ(20deg) !important;
+            
+        }
+    }
+    
+    
+    
+    .svg-container{
+        stroke:#d613c3;
+    
+        stroke-width: 10;
+    }
+    
+    
+  }
