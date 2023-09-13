@@ -10,10 +10,7 @@ export default function Layout() {
       <Sidebar />
 
       <div className='page'>
-        {/* <span className='tags-top-tags'>&lt;body&gt;</span> */}
         <Outlet />
-     
-
       </div>
     </div>
 

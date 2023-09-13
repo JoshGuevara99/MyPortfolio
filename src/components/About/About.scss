@@ -1,3 +1,40 @@
-h1{
-    margin-left: 100px;
+
+.about{
+    margin-top: 10%;
+
+    .text-container{
+        position:absolute;
+        left:20%;
+        top:12%;
+        transform: translateY(-50%);
+    
+        width: 40%;
+        max-height: 90%;
+        z-index: 1;
+    
+    
+
+    
+    }
+    
+    h1{
+       color:#ffd700;
+        font-size: 37px;
+        margin-left: 30%;
+    
+        font-family: 'Coolvetica';
+        font-weight: 400;
+    }
+}
+
+
+.text-animate-hover{
+    min-width:10px;
+    display:inline-block;
+    animation-fill-mode:both;
+
+    &:hover{
+        animation: rubberBand 1s;
+        color:#ffd700;
+    }
 }

@@ -32,7 +32,6 @@ function Home() {
             setLetterClass('text-animate-hover');
         }, 4000);
     
-        // It's a good practice to clean up timeouts when the component unmounts
         return () => {
             clearTimeout(timeoutId);
         };
@@ -68,7 +67,7 @@ function Home() {
                 </h1>
 
                
-                <h2 style={{marginTop:"80px"}}>Frontend Engineer / React Developer </h2>
+                <h2 className = "title-container">Frontend Engineer / React Developer </h2>
                 <Link to="/contact" className="flat-button">Contact Me</Link>
 
             </div>
