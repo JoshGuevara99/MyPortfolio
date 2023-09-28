@@ -1,68 +1,149 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import "./Contact.scss"
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
+import emailjs from '@emailjs/browser'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+
+
 
 function Contact() {
 
 
-  const [letterClass,setLetterClass] = useState('text-animate')
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [subject, setSubject] = useState("")
+  const [message, setMessage] = useState("")
+  const position = [37.32, -121.78]
 
-  const contactLetters = ['C','o','n','t','a','c', 't',' ','M','e']
+
+
+
+  const formRef = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_f9tjnqq', 'template_qfu1v2k', formRef.current, 'dNjN59-Qf2Of1aCXm')
+      .then((result) => {
+        console.log(result.text);
+
+        setName("")
+        setEmail("")
+        setSubject("")
+        setMessage("")
+        alert("Message Sent")
+      }, (error) => {
+        console.log(error.text);
+        setName("")
+        setEmail("")
+        setSubject("")
+        setMessage("")
+        alert("Error")
+
+
+      });
+  };
+  const [letterClass, setLetterClass] = useState('text-animate')
+
+  const contactLetters = ['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']
 
 
   useEffect(() => {
     console.log("one home")
     const timeoutId = setTimeout(() => {
-        setLetterClass('text-animate-hover');
+      setLetterClass('text-animate-hover');
     }, 4000);
 
     return () => {
-        clearTimeout(timeoutId);
+      clearTimeout(timeoutId);
     };
-}, []); 
+  }, []);
 
 
   return (
-    <div className = "contact-container">
-      <div className = "text-zone">
-        <h1>
-            <AnimatedLetters letterClass={letterClass} strArray = {contactLetters} index = {10}/>
-        </h1>
-       
+    <div className="contact-page">
+      <div className='left'>
+        <div className="text-zone">
+          <h1 className='contact-title' >
+            Contact Me
+          </h1>
+
+          <h3 className='text'>
+            Please contact me for further inquiries as I am always seeking new opportunities.
+          </h3>
+
+        </div>
+
+        <form className='contact-form' ref={formRef} >
+          <ul>
+            <li className='half'>
+              <input value={name} type="text" name="from_name" placeholder='Name' required onChange={e => setName(e.target.value)} />
+            </li>
+            <li className='half '>
+              <input type="email" value={email} onChange={e => setEmail(e.target.value)} name="from_email" placeholder="Email" required />
+
+            </li>
+            <li className='whole'>
+              <input type="text" name="from_subject" value={subject} onChange={e => setSubject(e.target.value)} placeholder="Subject" required />
+
+            </li>
+            <li className='whole'>
+
+              <textarea placeholder='Message'
+                value={message}
+                name="message"
+                onChange={e => setMessage(e.target.value)}
+                required />
+
+            </li>
+            <li>
+              <input type="submit" name="message" className="flat-button" value="Submit" onClick={sendEmail} required />
+
+            </li>
+          </ul>
+
+        </form>
       </div>
-      <p className="paragraph-container">
-        Please contact me for further inquiries as I am always seeking new opportunities
-        </p>
+      <div className='right'>
 
-      <form className='form-container'>
-        <ul>
-          <li className='half'>
-            <input className= "input" type="text" name="name" placeholder='Name' required/>
-          </li>
-          <li className='half'>
-          <input type="email" className= "input"name="email" placeholder = "Email" required/>
 
-          </li>
-          <li className='whole'>
-          <input type="text" className= "input"name="subject" placeholder = "Subject" required/>
+        <div className='info-container'>
+          Joshua Guevara,
+          <br />
+          United States,
+          <br />
+          San Jose, CA
+          <br />
+          <span>
+            joshua.guevara124@gmail.com
+          </span>
 
-          </li>
-          <li className='whole'>
+        </div>
 
-            <textarea placeholder='Message'
-            name="message"
-            required/>
+        <div className='map-wrap'>
 
-          </li>
-          <li>
-          <input type="submit" className= "flat-button" value= "Submit"   required/>
+          <MapContainer center={position} zoom={9} scrollWheelZoom={true}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={position}>
+              <Popup className='popup'>
+                A wild Josh!
+              </Popup>
+            </Marker>
+          </MapContainer>
 
-          </li>
-        </ul>
+        </div>
+      </div>
 
-      </form>
+
+
+
+
+
     </div>
   )
 }
 
-export default Contact
+export default Contact 

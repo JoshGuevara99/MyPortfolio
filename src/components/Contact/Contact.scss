@@ -1,117 +1,186 @@
+.contact-page {
+    display: flex;
+    margin-left: 140px;
+    margin-top: 10px;
+    margin-right: 20px;
+    height: 90%;
+}
 
-
-
-.contact-container{
-   
-    margin-top: 10%;
-    margin-left: -32px;
-    
-    color:#fff;
-    
-    h1{
-        color:#ffd700;
-        font-size: 37px;
-        margin-left: 30%;
-    
-        font-family: 'Coolvetica';
-        font-weight: 400;
-    }
-
+.left {
+    margin-top: 20px;
+    flex: 1;
+    width: 40%;
+    height: 100%;
+    margin-left: 1%;
+    margin-right: 2%;
 
 }
 
-.paragraph-container{
-    margin-left: 200px;
-    text-overflow: wrap;
+.right {
+    height: 100%;
+    flex: 1;
+    width: 40%;
+
+}
+
+.contact-title {
+    color: #ffd700;
+    font-size: 37px;
+    margin-left: 15%;
+
+    font-family: 'Coolvetica';
+    font-weight: 400;
+}
+
+.text{
+    width: 100%;
+    border: 0;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100px;
 }
 
 
-.form-container{
+.contact-form {
+    width: 100%;
+    margin-top: 20px;
 
-    margin-left: 150px;
-    // width:400%;
-    width: 75%;
-    max-width: 800px;
+    ul {
+        padding: 0;
+        margin: 0;
 
-    li{
-        padding:0;
-        margin:0;
-        margin-bottom: 10px;
-        overflow: hidden;    
-        display: block;
-        position: relative;
-        opacity: 0;    
-        list-style-type: none;
-        animation:fadeInUp 1s .5s;
-        animation-fill-mode: forwards;
-        clear:both;
-        
-    }
+        li {
+            border-radius: 2px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            opacity: 0;
+            overflow: hidden;
+            display: block;
+            clear: both;
+            position: relative;
+            animation: fadeInUp 1.5s .5s;
+            animation-fill-mode: forwards;
+        }
 
-    li.half{
-        width: 49%;
-        margin-left: 2%;
-        float: left;
-        clear: none;
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
 
-        &:first-child{
-            margin-left: 0;
+            &:first-child {
+                margin-left: 0;
+            }
         }
     }
 
     input[type='text'],
-    input[type='email']
-    {
+    input[type='email'] {
         width: 100%;
         border: 0;
-        background-color: #115173;
+        background: #115173;
         height: 50px;
         font-size: 16px;
-        color:#fff;
+        color: #fff;
         padding: 0 20px;
         box-sizing: border-box;
-
     }
-    
-    textarea{
-        background-color: #115173;
-        border: none;
+
+    textarea {
         width: 100%;
+        border: 0;
+        background: #115173;
         height: 50px;
         font-size: 16px;
-        color:#fff;
+        color: #fff;
         padding: 20px;
+        box-sizing: border-box;
         min-height: 150px;
-
     }
 
-    .flat-button{
-        color:#ffd700;
-        background: 0 0;
-        font: 11px;
+    .flat-button {
+        color: #ffd700;
+        font-size: 11px;
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
         border: 1px solid #ffd700;
         float: left;
         border-radius: 4px;
+        background: 0 0;
+        text-transform: uppercase;
+        float: right;
+        text-align: center;
+        margin-right: 10px;
     }
- 
+}
+
+.map-wrap {
+    background: rgba(8, 253, 216, 0.1);
+    width: 100%;
+    height: 70%;
+
+}
 
 
+.popup{
+    z-index: 5;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    color: red;
+}
+.leaflet-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: backInRight 1s .5s;
+    animation-fill-mode: forwards;
+}
+
+.info-map {
+    position: absolute;
+    background: #000;
+    top: 50px;
+    right: 30%;
+    z-index: 999999;
+    width: 267px;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1s;
+    animation-fill-mode: forwards;
+
+    span {
+        font-size: 16px;
+
+        span {
+            color: #ffd700;
+        }
+    }
 }
 
 
 
 
-.text-animate-hover{
-    min-width:10px;
-    display:inline-block;
-    animation-fill-mode:both;
+//   @media screen and (max-width: 1200px) {
+//     .map-wrap {
+//   float: none;
+//   margin: 0;
+//   width: 100%;
+//   height: 400px;
+//     }
 
-    &:hover{
-        animation: rubberBand 1s;
-        color:#ffd700;
-    }
-}
-
+//     .info-map {
+//       display: none;
+//     }
+//   }
