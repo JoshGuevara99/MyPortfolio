@@ -3,8 +3,8 @@ import './About.scss'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJs, faJsSquare, faNode, faNodeJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
-import pythonLogo from "/Users/joshuaguevara/Desktop/react-portfolio/src/assets/images/python-logo.png"
-import photo from "/Users/joshuaguevara/Desktop/react-portfolio/src/assets/images/Photo.jpeg"
+import pythonLogo from "/Users/joshuaguevara/Desktop/react-portfolio/MyPortfolio/src/assets/images/python-logo.png"
+import photo from "/Users/joshuaguevara/Desktop/react-portfolio/MyPortfolio/src/assets/images/Photo.jpeg"
 
 
 function About() {
