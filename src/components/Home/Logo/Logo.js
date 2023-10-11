@@ -1,5 +1,5 @@
 import './Logo.scss'
-import logo from '/Users/joshuaguevara/MyPortfolio/src/assets/images/logo-j.png'
+import logo from "../../../assets/images/logo-j.png"
 import React, { useRef,useEffect } from 'react'
 import gsap from 'gsap-trial'
 
