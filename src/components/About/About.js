@@ -36,9 +36,9 @@ function About() {
       <div className='content-container'>
 
 
-        <div className='photo-container'>
+
           <img className="my-photo" src={photo} />
-        </div>
+
 
 
         <div className='animation-container'>

@@ -1,35 +1,24 @@
 .about-container {
+    position: absolute;
 
-
-
-    margin-top: 70px;
-    margin-left: 80px;
+    top: 8%;
+    left: 100px;
+    // margin-top: 70px;
+    // margin-left: 80px;
     // background-color: red;
     height: 100%;
+   
 
 
-    .photo-container {
-
-
-        height: 45%;
-        width: 35%;
-
-        padding: 20px;
-
-        margin-right: 50px;
-
-
-
-    }
 
     .content-container {
-
+        margin-left: 100px;
         justify-content: left;
         align-items: center;
         display: flex;
 
         flex-direction: row;
-        min-width: 1000px;
+        // min-width: 1000px;
 
 
     }
@@ -39,8 +28,16 @@
 
         max-height: 340px;
         max-width: 300px;
+        height: 30%;
+        width: 40%;
+  
 
-        margin-left: 120px;
+        padding: 20px;
+
+        margin-right: 50px;
+
+
+        // margin-left: 120px;
 
 
 
@@ -48,23 +45,24 @@
 
 
     .text-zone {
-        width: 50%;
-        margin-left: 190px;
+
+        margin-left: 120px;
+
         text-align: left;
     }
 
-    .text-container {
-        position: absolute;
-        left: 20%;
-        top: 12%;
-        transform: translateY(-50%);
+    // .text-container {
+    //     position: absolute;
+    //     // left: 20%;
+    //     // top: 12%;
+    //     transform: translateY(-50%);
 
-        width: 40%;
-        max-height: 90%;
-        z-index: 1;
+    //     width: 40%;
+    //     max-height: 90%;
+    //     z-index: 1;
 
 
-    }
+    // }
 
     h1 {
         color: #ffd700;
@@ -79,13 +77,13 @@
         // width: 50%;
         // height: 100%;
         // top: 0;
-        // position: absolute;
+        position: absolute;
         // overflow: hidden;
         // margin-left: 90%;
         // margin-top: 10%;
         // margin-bottom: 10%;
-        margin-left: 50px;
-        margin-right: auto;
+        left: 700px;
+        
         padding: 30px;
         margin-bottom: 200px;
 
@@ -180,104 +178,140 @@
 }
 
 
+
+@media(max-width: 1091px) {
+
+
+    .about-container {
+
+
+        .animation-container {
+            // width: 50%;
+            // height: 100%;
+            // top: 0;
+            position: absolute;
+            // overflow: hidden;
+            // margin-left: 90%;
+            // margin-top: 10%;
+            // margin-bottom: 10%;
+            left: 60%;
+
+            padding: 30px;
+            margin-bottom: 200px;
+            margin-left: 10px;
+
+        }
+
+        .my-photo {
+            margin-right: 300px;
+        }
+    }
+
+}
+
+
+
+// @media(max-width: 984px){
+
+
+//     .about-container{
+
+
+//         .animation-container {
+//             // width: 50%;
+//             // height: 100%;
+//             // top: 0;
+//             position: absolute;
+//             // overflow: hidden;
+//             // margin-left: 90%;
+//             // margin-top: 10%;
+//             // margin-bottom: 10%;
+//            left: 50%;
+
+//             padding: 30px;
+//             margin-bottom: 200px;
+
+//         }
+//     }
+
+// }
 @media (max-width: 900px) {
 
 
-    .photo-container {
-        max-height: 170px !important;
-        max-width: 150px !important;
-        padding: 0;
-    }
-
-    .my-photo {
-        max-height: 170px !important;
-        max-width: 150px !important;
-    }
-
-    .content-container {
-        // display: flex;
-
-        // justify-content: center;
-        // align-items: center;
-        // text-align: center;
-        // flex-direction: row !important;
-
-        // gap:10px;
-        display: flex;
-        /* Makes the children align in a row */
-        align-items: center;
-        /* Vertically aligns children in the middle */
-        justify-content: center;
-        /* Horizontally aligns children in the middle */
-        gap: 10px;
-        /* Space between children */
+    .about-container {
+        position: absolute;
+        top: 4%;
+        left: -9%;
+        right: 10%;
 
 
 
-
-
-    }
-
-    .text-zone {
-        justify-content: center !important;
-        text-align: auto !important;
-        // margin-left: 230px !important;
-    }
-
-
-
-    .animation-container {
-
-        position: relative;
-    
-        margin-bottom: 120px !important;
-
-        //    display: flex;
-
-    }
-
-
-
-
-    .paragraph-container {
-
-        height: 100%;
-        width: 70%;
-        margin-left: 120px;
-        margin-right: 80px;
-        white-space: wrap;
-        overflow-y: scroll;
-
-    }
-
-    .paragraph {
-        font-size: 140%;
-        color: white;
-
-    }
-
-
-
-   
-
-    .python-logo {
-        height: 90px;
-        width: 90px;
+        // margin-top: 70px;
+        // margin-left: 80px;
         // background-color: red;
+        height: 100%;
 
-    }
 
-    .node-icon {
-        font-size: 50%;
-    }
 
-    .js-icon {
-        font-size: 50%;
-    }
 
-    .react-icon {
-        font-size: 50%;
+        .content-container {
 
+            justify-content: left;
+            align-items: center;
+            display: flex;
+
+            flex-direction: row;
+            min-width: 1000px;
+
+
+        }
+
+
+        
+
+
+        .text-zone {
+            width: 50%;
+            margin-left: 190px;
+            text-align: left;
+        }
+
+        .text-container {
+            position: absolute;
+            left: 20%;
+            top: 12%;
+            transform: translateY(-50%);
+
+            width: 40%;
+            max-height: 90%;
+            z-index: 1;
+
+
+        }
+
+        h1 {
+            color: #ffd700;
+            font-size: 37px;
+            margin-left: 30%;
+
+            font-family: 'Coolvetica';
+            font-weight: 400;
+        }
+
+        .animation-container {
+        
+            margin-left: 10px;
+            top: 145px;
+            padding: 30px;
+            // margin-bottom: 200px;
+
+        }
+
+        .my-photo{
+            width: 200px;
+            height: 220px;
+            margin-left: 40px;
+        }
     }
 
 
@@ -288,7 +322,7 @@
         animation-duration: 8s;
         transform-style: preserve-3d;
         transform-origin: 50px 50px 0;
-    
+
         div {
             position: absolute;
             width: 100px;
@@ -300,39 +334,362 @@
             justify-content: center;
             align-items: center;
             box-shadow: 0 0 10px 0px lightyellow;
-    
+
         }
-    
+
         .face1 {
             transform: translateZ(50px);
-    
+
         }
-    
+
         .face2 {
             transform: rotateY(90deg) translateZ(50px);
-    
+
         }
-    
+
         .face3 {
             transform: rotateY(180deg) translateZ(50px);
-    
-    
+
+
         }
-    
+
         .face4 {
             transform: rotateY(-90deg) translateZ(50px);
-    
-    
+
+
         }
-    
-    
-    
+
+
+
     }
-    
+
+
+    .js-icon{
+        font-size: 80px;
+    }
+
+    .node-icon{
+        font-size: 70px;
+    }
+
+    .react-icon{
+        font-size: 70px;
+    }
+    .python-logo{
+        height: 90px;
+        width: 90px;
+    }
+
+
 
 
 
 }
+
+
+@media (max-width: 678px) {
+
+
+    .about-container {
+        position: absolute;
+        top: 4%;
+        left: -9%;
+        right: 10%;
+
+
+
+        // margin-top: 70px;
+        // margin-left: 80px;
+        // background-color: red;
+        height: 100%;
+
+
+
+
+        .content-container {
+
+            justify-content: left;
+            align-items: center;
+            display: flex;
+
+            flex-direction: row;
+            min-width: 1000px;
+
+
+        }
+
+
+        
+
+
+        .text-zone {
+            width: 50%;
+            margin-left: 190px;
+            text-align: left;
+        }
+
+        .text-container {
+            position: absolute;
+            left: 20%;
+            top: 12%;
+            transform: translateY(-50%);
+
+            width: 40%;
+            max-height: 90%;
+            z-index: 1;
+
+
+        }
+
+        h1 {
+            color: #ffd700;
+            font-size: 37px;
+            margin-left: 30%;
+
+            font-family: 'Coolvetica';
+            font-weight: 400;
+        }
+
+        .animation-container {
+        
+            margin-left: 10px;
+            top: 145px;
+            padding: 30px;
+            // margin-bottom: 200px;
+
+        }
+
+        .my-photo{
+            width: 200px;
+            height: 220px;
+            margin-left: 40px;
+        }
+    }
+
+
+    .logo-spinner {
+        animation-name: spinlogo;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        transform-style: preserve-3d;
+        transform-origin: 50px 50px 0;
+
+        div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.4);
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px 0px lightyellow;
+
+        }
+
+        .face1 {
+            transform: translateZ(50px);
+
+        }
+
+        .face2 {
+            transform: rotateY(90deg) translateZ(50px);
+
+        }
+
+        .face3 {
+            transform: rotateY(180deg) translateZ(50px);
+
+
+        }
+
+        .face4 {
+            transform: rotateY(-90deg) translateZ(50px);
+
+
+        }
+
+
+
+    }
+
+
+    .js-icon{
+        font-size: 80px;
+    }
+
+    .node-icon{
+        font-size: 70px;
+    }
+
+    .react-icon{
+        font-size: 70px;
+    }
+    .python-logo{
+        height: 90px;
+        width: 90px;
+    }
+
+
+
+
+
+}
+
+
+
+
+@media (max-width: 400px) {
+
+
+    .about-container {
+        position: absolute;
+        top: 4%;
+        left: -20%;
+        right: 20%;
+
+
+
+        // margin-top: 70px;
+        // margin-left: 80px;
+        // background-color: red;
+        height: 100%;
+
+
+
+
+        .content-container {
+
+            justify-content: left;
+            align-items: center;
+            display: flex;
+
+            flex-direction: row;
+       
+
+
+        }
+
+
+        
+
+
+        .text-zone {
+            width: 50%;
+            margin-left: 190px;
+            text-align: left;
+        }
+
+        .text-container {
+            position: absolute;
+            left: 20%;
+            top: 12%;
+            transform: translateY(-50%);
+
+            width: 40%;
+            max-height: 90%;
+            z-index: 1;
+
+
+        }
+
+        h1 {
+            color: #ffd700;
+            font-size: 37px;
+            margin-left: 30%;
+
+            font-family: 'Coolvetica';
+            font-weight: 400;
+        }
+
+        .animation-container {
+       
+            position:absolute;
+            top:120px;
+            left: 300px;
+        }
+
+        .my-photo{
+            width: 120px;
+            height: 140px;
+            margin-left: 40px;
+        }
+    }
+
+
+    .logo-spinner {
+        animation-name: spinlogo;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        transform-style: preserve-3d;
+        transform-origin: 25px 25px 0;
+
+        div {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.4);
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px 0px lightyellow;
+
+        }
+
+        .face1 {
+            transform: translateZ(25px);
+
+        }
+
+        .face2 {
+            transform: rotateY(90deg) translateZ(25px);
+
+        }
+
+        .face3 {
+            transform: rotateY(180deg) translateZ(25px);
+
+
+        }
+
+        .face4 {
+            transform: rotateY(-90deg) translateZ(25px);
+
+
+        }
+
+
+
+    }
+
+
+    .js-icon{
+        font-size: 40px;
+    }
+
+    .node-icon{
+        font-size: 40px;
+    }
+
+    .react-icon{
+        font-size: 40px;
+    }
+    .python-logo{
+        height: 45px;
+        width: 45px;
+    }
+
+
+
+
+
+}
+
 
 @keyframes spinlogo {
     from,
