@@ -1,5 +1,5 @@
 .about-container {
-    
+
 
 
     margin-top: 70px;
@@ -9,11 +9,11 @@
 
 
     .photo-container {
-       
-  
+
+
         height: 45%;
         width: 35%;
-        
+
         padding: 20px;
 
         margin-right: 50px;
@@ -21,29 +21,28 @@
 
 
     }
-    .content-container{
-     
-       justify-content: left;
-       align-items: center;
-       display: flex;
-    
-       flex-direction: row;
-       min-width: 1000px;
 
-       
+    .content-container {
+
+        justify-content: left;
+        align-items: center;
+        display: flex;
+
+        flex-direction: row;
+        min-width: 1000px;
+
+
     }
 
-    .my-photo{
+    .my-photo {
 
-        // height: 100%;
-        // width: 100%;
+
         max-height: 340px;
         max-width: 300px;
-        min-height: 340px;
-        min-width: 300px;
-       margin-left: 120px;
-    
-  
+
+        margin-left: 120px;
+
+
 
     }
 
@@ -89,14 +88,14 @@
         margin-right: auto;
         padding: 30px;
         margin-bottom: 200px;
-        
+
     }
 }
 
 
-.paragraph-container{
-    
-    height:100%;
+.paragraph-container {
+
+    height: 100%;
     width: 80%;
     margin-left: 120px;
     margin-right: 60px;
@@ -104,7 +103,8 @@
     overflow-y: scroll;
 
 }
-.paragraph{
+
+.paragraph {
     font-size: 140%;
     color: white;
 
@@ -180,49 +180,158 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
-    .content-container{
+
+    .photo-container {
+        max-height: 170px !important;
+        max-width: 150px !important;
+        padding: 0;
+    }
+
+    .my-photo {
+        max-height: 170px !important;
+        max-width: 150px !important;
+    }
+
+    .content-container {
+        // display: flex;
+
+        // justify-content: center;
+        // align-items: center;
+        // text-align: center;
+        // flex-direction: row !important;
+
+        // gap:10px;
         display: flex;
-       
-        justify-content: center;
+        /* Makes the children align in a row */
         align-items: center;
-        flex-direction: column !important;
+        /* Vertically aligns children in the middle */
+        justify-content: center;
+        /* Horizontally aligns children in the middle */
+        gap: 10px;
+        /* Space between children */
+
+
+
+
+
+    }
+
+    .text-zone {
+        justify-content: center !important;
+        text-align: auto !important;
+        // margin-left: 230px !important;
+    }
+
+
+
+    .animation-container {
+
+        position: relative;
+    
+        margin-bottom: 120px !important;
+
+        //    display: flex;
+
+    }
+
+
+
+
+    .paragraph-container {
+
         height: 100%;
-        width: 100%;
-        overflow: auto;
-        margin: auto;
-    
-    }
-
-    .photo-container{
-        margin-right: 50%!important;
-        
-    }
-
-    .animation-container{
-        margin-left: 22% !important;
-    }
-
-
-
-    .paragraph-container{
-    
-        height:100%;
         width: 70%;
         margin-left: 120px;
         margin-right: 80px;
         white-space: wrap;
         overflow-y: scroll;
-    
+
     }
-    .paragraph{
+
+    .paragraph {
         font-size: 140%;
         color: white;
+
+    }
+
+
+
+   
+
+    .python-logo {
+        height: 90px;
+        width: 90px;
+        // background-color: red;
+
+    }
+
+    .node-icon {
+        font-size: 50%;
+    }
+
+    .js-icon {
+        font-size: 50%;
+    }
+
+    .react-icon {
+        font-size: 50%;
+
+    }
+
+
+    .logo-spinner {
+        animation-name: spinlogo;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        transform-style: preserve-3d;
+        transform-origin: 50px 50px 0;
+    
+        div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            background: rgba(255, 255, 255, 0.4);
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px 0px lightyellow;
+    
+        }
+    
+        .face1 {
+            transform: translateZ(50px);
+    
+        }
+    
+        .face2 {
+            transform: rotateY(90deg) translateZ(50px);
+    
+        }
+    
+        .face3 {
+            transform: rotateY(180deg) translateZ(50px);
+    
+    
+        }
+    
+        .face4 {
+            transform: rotateY(-90deg) translateZ(50px);
+    
+    
+        }
+    
+    
     
     }
     
- 
+
+
+
 }
 
 @keyframes spinlogo {

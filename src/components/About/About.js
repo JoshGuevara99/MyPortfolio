@@ -28,12 +28,13 @@ function About() {
 
   return (
     <div className="about-container">
+      
       <h1 className="text-zone">
         About Me
-        {/* <AnimatedLetters letterClass={letterClass} strArray = {aboutLetters} index = {8}/> */}
       </h1>
 
       <div className='content-container'>
+
 
         <div className='photo-container'>
           <img className="my-photo" src={photo} />
@@ -46,13 +47,13 @@ function About() {
               <img className="python-logo" src={pythonLogo} />
             </div>
             <div className='face2'>
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+              <FontAwesomeIcon className="react-icon" icon={faReact} color="#5ED4F4" />
             </div>
             <div className='face3'>
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+              <FontAwesomeIcon  className="js-icon" icon={faJsSquare} color="#EFD81D" />
             </div>
             <div className='face4'>
-              <FontAwesomeIcon icon={faNode} color="#2c9c2a" />
+              <FontAwesomeIcon className="node-icon" icon={faNode} color="#2c9c2a" />
             </div>
 
 
