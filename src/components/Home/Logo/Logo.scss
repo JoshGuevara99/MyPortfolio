@@ -1,7 +1,6 @@
 .logo-container{
     z-index: 0;
-    // width: 400px;
-    // height:600px;
+
     width:40%;
     height: 40%;
     max-height: 400px;
@@ -15,14 +14,7 @@
     margin-left: 15vw;
     margin-top: 20vh;
 
-    // svg{
-    //     width:100%;
-    //     height:auto;
-    //     bottom:0;
-    //     transform: rotateZ(30deg) !important;
-        
 
-    // }
     
     .solid-logo{
         position:absolute;
@@ -61,7 +53,6 @@
 
 
 @media screen and (max-width: 972px) {
-    /* CSS rules for screens less than or equal to 600px wide */
     .logo-container{
         z-index: 0;
         width: 400px;
@@ -74,14 +65,7 @@
         left:20%;
         margin:auto;
     
-        // svg{
-        //     width:100%;
-        //     height:auto;
-        //     bottom:0;
-        //     transform: rotateZ(30deg) !important;
-            
-    
-        // }
+
         
         .solid-logo{
             position:absolute;
@@ -125,31 +109,15 @@
 
 
 @media screen and (max-width: 900px) {
-    /* CSS rules for screens less than or equal to 600px wide */
     .logo-container{
         z-index: 0;
-        // width: 250px;
-        // height:400px;
+
         margin-left: 24vw;
         margin-top: 20vh;
         width:50%;
         height: 70%;
     
-        // position:absolute;
-        // margin-top: 50%;
-        // margin-left: 10%;
-        // right:15%;
-   
-    
-        // svg{
-        //     width:100%;
-        //     height:auto;
-        //     bottom:0;
-        //     transform: rotateZ(30deg) !important;
-            
-    
-        // }
-        
+     
         .solid-logo{
             position:absolute;
             top:auto;

@@ -1,47 +1,4 @@
-// .contact-page {
-//     display: flex;
-//     margin-left: 140px;
-//     margin-top: 10px;
-//     margin-right: 20px;
-//     height: 90%;
-// }
 
-// .left {
-//     margin-top: 20px;
-//     flex: 1;
-//     width: 40%;
-//     height: 100%;
-//     margin-left: 1%;
-//     margin-right: 2%;
-
-// }
-
-// .right {
-//     height: 100%;
-//     flex: 1;
-//     width: 40%;
-
-// }
-
-// .contact-title {
-//     color: #ffd700;
-//     font-size: 37px;
-//     margin-left: 15%;
-
-//     font-family: 'Coolvetica';
-//     font-weight: 400;
-// }
-
-// .text{
-//     width: 100%;
-//     border: 0;
-//     height: 50px;
-//     font-size: 16px;
-//     color: #fff;
-//     padding: 20px;
-//     box-sizing: border-box;
-//     min-height: 100px;
-// }
 
 .contact-page {
     display: flex;
@@ -54,24 +11,22 @@
 
 .left,
 .right {
-    // margin-top: 2%;
     flex: 1;
     width: 48%;
-    /* reduced a bit for spacing between left and right */
     height: auto;
-    /* let's not constrain the height */
+
 }
 
 .right {
     margin-top: 10%;
     margin-left: 2%;
-    /* space between left and right */
+
 }
 
 .contact-title {
     color: #ffd700;
     font-size: 37px;
-    /* Use relative units */
+
 
     font-family: 'Coolvetica';
     font-weight: 400;
@@ -87,7 +42,7 @@
     height: 50px;
     font-size: 1rem;
     margin-right: 100%;
-    /* Use relative units */
+
     color: #fff;
     padding: 20px;
     box-sizing: border-box;
@@ -194,7 +149,7 @@
 }
 
 .info-container {
-    // position: absolute;
+
     background: #000;
     top: 50px;
     right: 30%;
@@ -226,7 +181,6 @@
     .contact-title {
         color: #ffd700;
         font-size: 37px;
-        /* Use relative units */
 
         font-family: 'Coolvetica';
         font-weight: 400;
@@ -276,7 +230,7 @@
     .contact-title {
         color: #ffd700;
         font-size: 27px;
-        /* Use relative units */
+ 
         margin-left: 10px;
         margin-top: 32%;
 

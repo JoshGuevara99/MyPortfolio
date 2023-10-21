@@ -29,7 +29,6 @@
     }
 
     h1 {
-        // background-color: red;
         color:#fff;
         font-size: 53px;
         margin: 0;
@@ -45,7 +44,6 @@
             padding-left: 14px;
             padding-right: 2px;
             opacity:0;
-            // background-color: green;
             height:auto;
             animation:rotateIn 1s linear both;
             animation-delay:1s;
@@ -88,17 +86,16 @@
     
     .title-container{
         white-space: nowrap;
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 900px) {
     .home-page {
 
-        // padding-top: 80px;
-        // margin-top: 70px;
         .text-container{
             position:absolute;
-            // left:20%;
+
             top:10%;
             transform: translateY(-50%);
             width: 100%;
@@ -113,7 +110,6 @@
     }
     
         h1 {
-            // background-color: red;
             color:#fff;
             font-size: 43px;
             margin: 0;
@@ -129,7 +125,6 @@
                 padding-left: 14px;
                 padding-right: 2px;
                 opacity:0;
-                // background-color: green;
                 height:auto;
                 animation:rotateIn 1s linear both;
                 animation-delay:1s;
@@ -180,7 +175,6 @@
     
         .text-container{
             position:absolute;
-            // left:20%;
        
             transform: translateY(-50%);
             width: 20%;
@@ -189,7 +183,6 @@
         }
     
         h1 {
-            // background-color: red;
             color:#fff;
             font-size: 33px;
             margin: 0;
@@ -206,7 +199,6 @@
                 padding-left: 14px;
                 padding-right: 2px;
                 opacity:0;
-                // background-color: green;
                 height:auto;
                 animation:rotateIn 1s linear both;
                 animation-delay:1s;

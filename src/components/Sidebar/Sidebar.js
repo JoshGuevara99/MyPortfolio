@@ -13,13 +13,13 @@ export default function Sidebar() {
       </Link>
       <nav>
 
-        <NavLink exact = "true" activeclassname = "active" to = "/">
+        <NavLink exact = "true" activeClassName = "active" to = "/">
         <FontAwesomeIcon icon = {faHome} color = "4d4d4e"/>
         </NavLink>
-        <NavLink className = "about-link" exact = "true" activeclassname = "active" to = "/about">
+        <NavLink className = "about-link" exact = "true" activeClassName = "active" to = "/about">
         <FontAwesomeIcon icon = {faUser} color = "4d4d4e"/>
         </NavLink>
-        <NavLink className = "contact-link" exact = "true" activeclassname = "active" to = "/contact">
+        <NavLink className = "contact-link" exact = "true" activeClassName = "active" to = "/contact">
         <FontAwesomeIcon icon = {faEnvelope} color = "4d4d4e"/>
         </NavLink>
 

@@ -31,13 +31,13 @@
 h1 {
     color: #ffd700;
     font-size: 37px;
-    margin-left: 0px; // To align the h1 with the left side of the container
+    margin-left: 0px; 
     font-family: 'Coolvetica';
     font-weight: 400;
 }
 
 .animation-container {
-    margin-left: 40%; // If you want a space between the photo and the animation, adjust this value
+    margin-left: 40%; 
     padding: 30px;
     margin-bottom: 200px;
 }
@@ -45,7 +45,7 @@ h1 {
 .paragraph-container {
     min-height: 80vh;
     width: 80%;
-    margin-left: 0px; // To align with the left side of the container
+    margin-left: 0px; 
     margin-right: 100px;
     overflow-x: auto;
     overflow-y: scroll;
@@ -233,7 +233,7 @@ h1 {
        
   
         height: 50%;
-        width: 55%;
+        width: 50%;
         
 
     }
@@ -318,7 +318,7 @@ h1 {
        
   
         height: 50%;
-        width: 55%;
+        width: 50%;
         
 
     }
