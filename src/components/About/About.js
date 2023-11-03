@@ -69,6 +69,12 @@ function About() {
       </div>
 
 
+      <div className='project-container'>
+          
+
+      </div>
+
+
     </div>
 
   )
